@@ -6,7 +6,7 @@ class App extends React.Component {
     let nom = 'Gustavo', idad = 20;
     return (
       <div>
-        <Msg nome='Jonas' idade='22' />
+        <Msg nome='Jonas do gás' idade='22' />
         <Msg nome={nom} idade={idad} />
       </div>
     )
