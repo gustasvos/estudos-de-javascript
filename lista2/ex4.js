@@ -12,4 +12,6 @@ class Pessoa{
 }
 
 const p = new Pessoa('gustavo', 19)
-p.print();  
+const p2 = new Pessoa('vitor', 20)
+p.print();
+p2.print();

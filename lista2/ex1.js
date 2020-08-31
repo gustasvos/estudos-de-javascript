@@ -14,4 +14,4 @@ const professor = {
 }
 
 aluno.print() 
-professor.nome()
+professor.print()

@@ -27,6 +27,7 @@ class Cliente extends Pessoa{
     }
 }
 
+const c2 = new Cliente('Vitor', 21, 123456789)
 const c = new Cliente('Gustavo2', 15, 156156456);
 c.print();
-
+c2.print()

@@ -22,11 +22,9 @@ const aobj = [{
     }
 }]
 
-// console.log(aobj[1])
 
-/*
-keys = Object.keys(aobj[1])
-value = Object.values(aobj[1])
-console.log(value)
-console.log(keys)
-*/
+for (let i = 0; i < aobj.length; i++) {
+  for (var key in aobj[i]) {
+    console.log(key, ":", aobj[i][key]);  
+  }
+}
