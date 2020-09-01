@@ -23,8 +23,9 @@ const aobj = [{
 }]
 
 
-for (let i = 0; i < aobj.length; i++) {
-  for (var key in aobj[i]) {
-    console.log(key, ":", aobj[i][key]);  
+for(let i in aobj){
+    console.log(aobj[i].nome)
+  Object.keys(aobj[i].carac).forEach(function(key) {
+    console.table(key +" : "+ aobj[i].carac[key])
+  })
   }
-}
