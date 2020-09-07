@@ -1,6 +1,6 @@
 function saudacao(hora) {
     return new Promise((x,y) => {
-        hora = Math.random() * 10 | 0
+        hora = Math.floor(Math.random() * 10)
         // console.log(hora)
 
         if (hora%2 == 0) {

@@ -1,5 +1,5 @@
 let p = new Promise((x,y) => {
-    let i = Math.random() * 10 | 0
+    let i = Math.floor(Math.random() * 10)
     // console.log(i)
 
     if (i%2 == 0) {
