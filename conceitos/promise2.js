@@ -29,3 +29,5 @@ ride
         // executado nao importa oq aconteça
         console.log("all settled");
     })
+
+    
