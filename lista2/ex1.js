@@ -5,7 +5,7 @@ const aluno = {
     }
 }
 
-// print é uma função anonima
+// arrow function não pode ser usada para criar funções em objetos
 const professor = {
     nome: 'José',
     print: () => {
