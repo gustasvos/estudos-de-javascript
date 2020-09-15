@@ -75,6 +75,10 @@ app.delete('/pow/:a/:b',(req,res) => {
 // curl http://localhost:3101/texto.txt
 app.use(express.static('../public'));
 
+// a.txt passa a ser curl http://localhost:3101/arquivo/txt 
+app.use('/arquivo/txt', express.static('../public/texto.txt'));
+
+
 // todas as urls de localhost terao 'caminho inexistente' no seu conteudo
 // curl http://localhost:3101/desconhecido
 app.use((req,res) =>{res.send("Caminho inexistente")});
