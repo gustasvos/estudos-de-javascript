@@ -70,3 +70,5 @@ app.delete('/pow/:a/:b',(req,res) => {
     b = parseInt(b);
     res.send(a**b +'');
 })
+
+// KEKW
