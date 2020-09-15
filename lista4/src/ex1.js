@@ -71,4 +71,10 @@ app.delete('/pow/:a/:b',(req,res) => {
     res.send(a**b +'');
 })
 
-// KEKW
+// acessa os arquivos txt da pasta public
+// curl http://localhost:3101/texto.txt
+app.use(express.static('../public'));
+
+// todas as urls de localhost terao 'caminho inexistente' no seu conteudo
+// curl http://localhost:3101/desconhecido
+app.use((req,res) =>{res.send("Caminho inexistente")});
