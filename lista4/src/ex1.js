@@ -25,3 +25,48 @@ app.get('/diff',(req,res) => {
     y = parseInt(y);
     res.send(x-y +''); 
 })
+
+// curl -X POST http://localhost:3101/pow/5/4
+app.post('/diff/:a/:b',(req,res) => {
+    let a = req.params.a;
+    let b = req.params.b;
+    a = parseInt(a);
+    b = parseInt(b);
+    res.send(a-b +'');
+})
+
+// curl "http://localhost:3101/pow?a=5&b=4"
+app.get('/pow',(req,res) => {
+    let a = req.query.a;
+    let b = req.query.b;
+    a = parseInt(a);
+    b = parseInt(b);
+    res.send(a**b +'');
+})
+
+// curl -X POST http://localhost:3101/pow/5/4
+app.post('/pow/:a/:b',(req,res) => {
+    let a = req.params.a;
+    let b = req.params.b;
+    a = parseInt(a);
+    b = parseInt(b);
+    res.send(a**b +'');
+})
+
+// curl -X PUT http://localhost:3101/pow/5/4
+app.put('/pow/:a/:b',(req,res) => {
+    let a = req.params.a;
+    let b = req.params.b;
+    a = parseInt(a);
+    b = parseInt(b);
+    res.send(a**b +'');
+})
+
+// curl -X DELETE http://localhost:3101/pow/5/4
+app.delete('/pow/:a/:b',(req,res) => {
+    let a = req.params.a;
+    let b = req.params.b;
+    a = parseInt(a);
+    b = parseInt(b);
+    res.send(a**b +'');
+})
